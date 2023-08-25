@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">  
+    <title>Document</title>
+</head>
+<body>
+    <div id="ree">
+    <div id="score">score:0<br>
+    select speed</div>
+    <select id="speed">speed
+        <option value=700>low</option>
+        <option value=500 >medium</option>
+        <option value=300 >high</option>
+    </select>
+    <button onclick="selectspeed()">set speed</button>
+    <h3>Instruction</h3>
+    When snake head touches the walls Gameover
+    </div>
+    <div id="board"></div>
+    <div id="buttons">
+
+     <div id="updiv"> <button id="up" onclick="func(0,-1)">up</button></div><br>
+    <div  id ="rl">  <button id="right" onclick="func(-1,0)">left</button>
+        <button id="'down" onclick="func(1,0)">right</button>
+        </div><br>
+      <div id="downdiv"><button id="left" onclick="func(0,1)">down</button></div>
+        </div>
+<script src="script.js"></script>    
+</body>
+</html>
